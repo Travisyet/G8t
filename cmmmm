@@ -1,0 +1,10 @@
+#ifndef CMMMM
+#define CMMMM
+
+class CMakeLists
+{
+public:
+    CMakeLists();
+};
+
+#endif // CMMMM

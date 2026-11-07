@@ -1,0 +1,42 @@
+
+# Fichiers de compilation
+build/
+cmake-build-*/
+out/
+
+# Qt Creator
+*.user
+*.user.*
+.qtcreator/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Exécutables et bibliothèques compilés
+*.exe
+*.dll
+*.obj
+*.o
+*.lib
+*.pdb
+
+# Installateurs
+installer/
+*.iss.bak
+
+# Fichiers personnels et bases de données
+*.db
+*.sqlite
+*.sqlite3
+*.key
+.env
+
+# Sauvegardes
+*.bak
+*.old
+*.tmp
+
+# Windows
+Thumbs.db
+Desktop.ini

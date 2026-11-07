@@ -1,0 +1,44 @@
+cmake_minimum_required(VERSION 3.16)
+
+project(VaultX VERSION 0.1 LANGUAGES CXX)
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+
+# Trouver Qt (ajout de Sql)
+find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets Sql)
+
+# Indique le chemin vers les includes
+include_directories("C:\Users\latea\Documents\libsodium-1.0.19-mingw\libsodium-win64\include")
+
+# Indique le chemin vers la librairie à linker
+# Adapte le chemin selon ton dossier (x64/Win32, Release/Debug, static/dynamic)
+target_link_libraries(VaultX PRIVATE "C:\Users\latea\Documents\libsodium-1.0.19-mingw\libsodium-win64\lib")
+
+# --- Configuration pour libsodium ---
+# Adapte le chemin selon ton installation
+find_library(SODIUM_LIBRARY sodium)
+find_path(SODIUM_INCLUDE_DIR sodium.h)
+
+# Fichiers sources
+add_executable(VaultX
+    main.cpp
+    mainwindow.cpp
+    mainwindow.h
+    mainwindow.ui
+)
+
+# Lier les bibliothèques
+target_link_libraries(VaultX PRIVATE
+    Qt6::Core
+    Qt6::Gui
+    Qt6::Widgets
+    Qt6::Sql
+)
+
+# Si libsodium n'est pas dans le chemin par défaut, décommente et adapte :
+# target_include_directories(VaultX PRIVATE ${SODIUM_INCLUDE_DIR})
+# target_link_libraries(VaultX PRIVATE ${SODIUM_LIBRARY})
