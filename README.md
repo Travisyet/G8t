@@ -1,4 +1,4 @@
-# G8t- gestionnaire de mots de passe "bas niveau" :
+# G8t - gestionnaire de mots de passe "bas niveau" :
 ![Description](G8t.png)
 
 Paw patrol is used to not be detected afk .
