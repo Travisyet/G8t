@@ -9,7 +9,8 @@
 
 ## Information (IMPORTANT) ❗ :
  - ❗ lors de la première au niveau du mots de passe c'est a se moment ou vous initialiser celui-ci ❗
-
+   
+## Visuel :
 ![Description](presentation.png)
 
 ## Installation by Git :
