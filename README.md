@@ -1,8 +1,6 @@
 # G8t - gestionnaire de mots de passe "bas niveau" :
 ![Description](G8t.png)
 
-Paw patrol is used to not be detected afk .
-
 ## Features :
  - ✅ Base de données SQLite : Tes comptes sont sauvegardés de façon persistante. 
  - ✅ Chiffrement robuste : Tes mots de passe sont chiffrés avec libsodium (XChaCha20-Poly1305) avant d'être stockés.
