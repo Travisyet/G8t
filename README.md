@@ -10,5 +10,7 @@
 ## Information (IMPORTANT) ❗ :
  - ❗ lors de la première au niveau du mots de passe c'est a se moment ou vous initialiser celui-ci ❗
 
+![Description](presentation.png)
+
 ## Installation by Git :
 	Clone the repository: git clone https://github.com/Travisyet/G8t.git
